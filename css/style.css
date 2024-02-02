@@ -33,6 +33,10 @@ body {
 
 }
 
+p {
+    text-align: justify;
+}
+
 ::before,
 ::after {
     box-sizing: border-box;
@@ -42,15 +46,95 @@ body {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 100px;
-    top: 0;
-    right: 0;
-    z-index: 0;
+    padding: 0 30px;
     opacity: 1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-content {
+    padding-left: 100px;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 500;
+    position: relative;
+
+}
+
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: rgb(216, 59, 145);
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: rgb(216, 59, 145);
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
 
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
 
+.btn {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 35px;
+    color: #e8dfec;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background-color: rgb(216, 59, 145);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 /* SIDEBAR */
@@ -62,7 +146,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    border-right: 1px solid var(--bg-black-700);
+    /* border-right: 1px solid var(--bg-black-700); */
     z-index: 10;
 }
 
@@ -157,4 +241,150 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+/*Accueil*/
+.home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+
+.home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.hello {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+h3.hello span {
+
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(216, 59, 145);
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing {
+    color: rgb(216, 59, 145);
+}
+
+.home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--bg-black-700);
+}
+
+.home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-img::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 5px solid rgb(216, 59, 145);
+    border-right: 5px solid rgb(216, 59, 145);
+    right: 20px;
+    bottom: -40px;
+}
+
+.home .home-img::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 5px solid rgb(216, 59, 145);
+    border-left: 5px solid rgb(216, 59, 145);
+    left: -20px;
+    top: -40px;
+}
+
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+}
+
+/*About*/
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.about .about-content .about-text h3 span {
+    color: rgb(216, 59, 145);
+}
+
+.about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+
+}
+
+.about .about-content .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+
+}
+
+.about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--bg-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .button {
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .button .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
 }
