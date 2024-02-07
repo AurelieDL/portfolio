@@ -62,7 +62,7 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid rgb(216, 59, 145);
+    border: none;
 }
 
 .style-switcher .color-1 {
@@ -84,5 +84,5 @@
 }
 
 .style-switcher .color-5 {
-    background: #86c435;
+    background: rgb(243, 186, 63);
 }

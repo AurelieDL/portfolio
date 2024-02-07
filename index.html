@@ -31,19 +31,19 @@
           <div class="menu">
 
             <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#menu" class="nav__link active-link"> Accueil</a>
+              <li>
+                <a href="#home" class="nav__link active-link"> Accueil</a>
               </li>
-              <li class="nav__item">
-                <a href="#about" class=" nav__link"> A propos</a>
+              <li>
+                <a href="#about" class=" nav__link "> A propos</a>
               </li>
-              <li class="nav__item">
+              <li>
                 <a href="#services" class="nav__link"> Mes services</a>
               </li>
-              <li class="nav__item">
-                <a href="#work" class="nav__link"> Portfolio</a>
+              <li>
+                <a href="#portfolio" class="nav__link"> Portfolio</a>
               </li>
-              <li class="nav__item">
+              <li>
                 <a href="#contact" class="nav__link"> Contact</a>
               </li>
             </ul>
@@ -55,12 +55,12 @@
     <!-- Main Content Start-->
     <div class="main-content">
       <!-- Home Section Start -->
-      <section class="home section ">
+      <section class="home active section" id="home">
         <div class="container">
           <div class="row">
             <div class="home-info padd-15">
               <h3 class="hello">Bonjour, je suis <span class="name">Aurélie Der-Loughian</span></h3>
-              <h3 class="my-profession">Je suis <span class="typing">développeuse web</span></h3>
+              <h3 class="my-profession">Je suis { <span class="typing"></span></h3>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ultrices dui sapien eget mi proin sed libero. Volutpat
@@ -76,7 +76,7 @@
       <!-- Home Section End -->
 
       <!-- About Section Start -->
-      <section class="about section ">
+      <section class="about section" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -201,7 +201,7 @@
       </section>
       <!-- About Section End -->
       <!-- Services Section Start -->
-      <section class="service section ">
+      <section class="service section" id="services">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -258,7 +258,7 @@
       </section>
       <!-- Services Section End -->
       <!-- PORTFOLIO section START-->
-      <section class="portfolio section">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -298,7 +298,7 @@
       <!--PORTFOLIO section END-->
 
       <!-- CONTACT section START-->
-      <section class="contact section">
+      <section class="contact section" id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -361,6 +361,7 @@
   </div>
   <!-- Style Switch End-->
   <!-- JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
   <script src="js/style-switcher.js"></script>
 </body>
