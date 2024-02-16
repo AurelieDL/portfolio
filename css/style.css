@@ -60,15 +60,13 @@ p {
     opacity: 1;
 }
 
-
 .hidden {
     display: none !important;
 }
 
-/* 
 .main-content {
     padding-left: 100px;
-} */
+}
 
 .padd-15 {
     padding-left: 15px;
@@ -82,14 +80,16 @@ p {
 }
 
 .section .container {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+
+
 }
+
 
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .section-title h2 {
@@ -162,20 +162,18 @@ p {
     position: fixed;
     left: 0;
     top: 0;
-    display: flex;
+    /* border-right: 1px solid var(--bg-black-700); */
     z-index: 10;
 }
 
 .sidebar .nav-toggler {
     height: 40px;
     width: 45px;
-    border: 1px solid var(--skin-color);
+    border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    /* left: 300px;
-    top: 20px; */
-    top: 2rem;
-    right: 1.5rem;
+    left: 300px;
+    top: 20px;
     border-radius: 5px;
     background-color: var(--bg-black-100);
     display: none;
@@ -183,19 +181,8 @@ p {
     justify-content: center;
 }
 
-.sidebar .nav__close i {
 
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    right: 1.25rem;
-    cursor: pointer;
-    color: var(--skin-color);
-    display: none;
-
-}
-
-.sidebar .nav-toggler i {
+.sidebar .nav-toggler span {
     height: 2px;
     width: 18px;
     background: var(--skin-color);
@@ -203,7 +190,7 @@ p {
     position: relative;
 }
 
-.sidebar .nav-toggler i::before {
+.sidebar .nav-toggler span::before {
     content: "";
     height: 2px;
     width: 18px;
@@ -213,7 +200,7 @@ p {
     left: 0;
 }
 
-.sidebar .nav-toggler i::after {
+.sidebar .nav-toggler span::after {
     content: "";
     height: 2px;
     width: 18px;
@@ -258,11 +245,10 @@ p {
     color: var(--skin-color);
 }
 
-
 .nav__link.active-link::after,
 .nav__link:hover::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 6px;
     height: 6px;
     background-color: var(--skin-color);
@@ -278,17 +264,23 @@ p {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
-
 }
 
 .home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
+
+}
+
+.home .home-info p {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 26px;
 }
 
 h3.hello {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 15px 0;
 }
 
@@ -302,18 +294,17 @@ h3.hello span {
 h3.my-profession {
     font-size: 30px;
     margin: 15px 0;
-    font-weight: 500;
 }
 
 .typing {
     color: var(--skin-color);
-    font-weight: 600;
 }
 
 .home-info p {
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     font-size: 20px;
     color: var(--bg-black-700);
+
 }
 
 .home .home-img {
@@ -352,15 +343,13 @@ h3.my-profession {
 }
 
 /*About*/
-.about {
-    margin-top: -40px;
-    padding-bottom: 60px;
-}
+/* .container .about {
+    padding-bottom: 30px;
+} */
 
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
-
 }
 
 .about .about-content .about-text {
@@ -370,7 +359,7 @@ h3.my-profession {
 
 .about .about-content .about-text h3 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 600;
     color: var(--text-black-900);
 }
@@ -532,7 +521,7 @@ h3.my-profession {
 
 /* SERVICE */
 .service .container {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .service .service-item {
@@ -591,12 +580,9 @@ h3.my-profession {
     font-size: 16px;
     color: var(--bg-black-700);
     line-height: 25px;
-    text-align: center;
 }
 
 /* PORTFOLIO */
-
-
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -609,20 +595,7 @@ h3.my-profession {
 
 .portfolio .portfolio-heading h2 {
     color: var(--bg-black-700);
-    font-weight: 600;
-}
-
-.portfolio .description h2 {
-    font-weight: 700;
-}
-
-
-.portfolio .soon h2 {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--bg-black-700);
-    margin-bottom: 40px;
-    margin-top: 60px;
+    font-weight: 500;
 }
 
 .portfolio .personal-item {
@@ -669,13 +642,18 @@ h3.my-profession {
     color: var(--bg-black-700);
 }
 
-/* CONTACT ME */
+.portfolio .soon h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 50px;
+}
 
+/* CONTACT ME */
 .contact-title {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .contact-sub-title {
@@ -725,82 +703,21 @@ h3.my-profession {
     font-weight: 400;
 }
 
-/* FOOTER */
-
-
 @media (max-width:1199px) {
-    /* .sidebar {
-        /* left: -300px; */
-    /* width: 100%; */
-    /* z-index: 999; */
+    .sidebar {
+        left: -300px;
+    }
+
+    .main-content {
+        padding-left: 0;
+
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
 }
-
-/* .show-sidebar {
-        transform: translateX(0);
-    } */
-/* 
-.nav__menu {
-    height: 100%;
-    width: 100%;
-    transform: rotate(0deg) translate(0);
-    display: flex;
-    justify-content: center;
-}
-
-.nav__list {
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .nav__link {
-    padding: 1rem 0;
-    line-height: 1.5;
-} */
-
-.sidebar .nav__close span {
-    display: block;
-}
-
-.nav__link.active-link::after,
-.nav__link:hover::after {
-    bottom: 0;
-}
-
-
-
-
-.sidebar.open {
-    left: 0;
-
-}
-
-
-
-.sidebar .nav-toggler {
-    display: flex;
-    left: 30px;
-}
-
-.sidebar .nav-toggler.open {
-    left: 150px;
-}
-
-/* 
-.section {
-    left: 0;
-}
-
-.section.open {
-    left: 200px;
-} */
-
-.about .about-content .personal-info .info-item p span {
-    display: block;
-    margin-left: 0;
-}
-
 
 @media (max-width:991px) {
 
@@ -815,10 +732,14 @@ h3.my-profession {
     .home .home-info {
         flex: 0 0 100%;
         min-width: 100%;
+
     }
 
-    .home .home-info .my-profession,
     .home .home-img {
+        display: none;
+    }
+
+    .home .my-profession {
         display: none;
     }
 }
