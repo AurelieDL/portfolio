@@ -710,9 +710,7 @@ h3.my-profession {
 
 
 .footer {
-
     background: var(--bg-black-900);
-    display: block;
     padding: 0 30px;
     padding-bottom: 20px;
     opacity: 1;
@@ -721,7 +719,7 @@ h3.my-profession {
 .footer .row {
     justify-content: center;
     font-size: 14px;
-    padding: 0 30px;
+
     background-color: var(--bg-black-900);
     color: var(--text-black-900);
 }
@@ -734,7 +732,32 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
+.main-container {
+    background: var(--bg-black-900);
+    padding: 0 30px;
+    padding-top: 40px;
+}
 
+.section-title h2 {
+    background-color: rebeccapurple;
+}
+
+
+.sub-info {
+    background: var(--bg-black-900);
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    padding-bottom: 40px;
+}
+
+.sub-info a {
+    color: var(--text-black-900);
+}
+
+.sub-info a:hover {
+    color: var(--bg-black-700);
+}
 
 @media (max-width:1199px) {
     .sidebar {
