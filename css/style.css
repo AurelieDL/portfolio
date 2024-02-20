@@ -60,6 +60,9 @@ p {
     opacity: 1;
 }
 
+
+
+
 .hidden {
     display: none !important;
 }
@@ -343,9 +346,7 @@ h3.my-profession {
 }
 
 /*About*/
-/* .container .about {
-    padding-bottom: 30px;
-} */
+
 
 .about .about-content {
     flex: 0 0 100%;
@@ -653,7 +654,8 @@ h3.my-profession {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+
 }
 
 .contact-sub-title {
@@ -661,6 +663,7 @@ h3.my-profession {
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
+    margin-top: 50px;
 
 }
 
@@ -668,7 +671,7 @@ h3.my-profession {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
-    margin-bottom: 60px;
+
 }
 
 .contact .contact-info-item .icon {
@@ -694,6 +697,7 @@ h3.my-profession {
     color: var(--bg-black-700);
     font-weight: 400;
     text-align: center;
+
 }
 
 .contact .contact-info-item a {
@@ -701,7 +705,36 @@ h3.my-profession {
     line-height: 25px;
     color: var(--bg-black-700);
     font-weight: 400;
+
 }
+
+
+.footer {
+
+    background: var(--bg-black-900);
+    display: block;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    opacity: 1;
+}
+
+.footer .row {
+    justify-content: center;
+    font-size: 14px;
+    padding: 0 30px;
+    background-color: var(--bg-black-900);
+    color: var(--text-black-900);
+}
+
+.footer .row a {
+    color: var(--text-black-900);
+}
+
+.footer .row a:hover {
+    color: var(--skin-color);
+}
+
+
 
 @media (max-width:1199px) {
     .sidebar {
@@ -721,11 +754,20 @@ h3.my-profession {
 
 @media (max-width:991px) {
 
+
     .contact .contact-info-item,
     .portfolio .personal-item,
     .service .service-item {
         flex: 0 0 50%;
         min-width: 50%;
+    }
+
+    .footer .row {
+
+        flex: 0 0 100%;
+        min-width: 100%;
+        padding-top: 40px;
+        font-size: 11px;
     }
 
 
@@ -745,6 +787,7 @@ h3.my-profession {
 }
 
 @media (max-width:767px) {
+
 
     .contact .contact-info-item,
     .portfolio .portfolio-item,

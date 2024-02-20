@@ -10,9 +10,6 @@ var typed = new Typed(".typing", {
 /* =================== Scroll sections active link =================== */
 // get all sections that have an id defined
 const sections = document.querySelectorAll("section[id]");
-// allSection = document.querySelectorAll(".section");
-// totalSection = allSection.length;
-// add an event listner listening for scroll
 window.addEventListener("scroll", navHighlighter)
 
 function navHighlighter() {
