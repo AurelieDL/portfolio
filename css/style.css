@@ -647,6 +647,7 @@ h3.my-profession {
     font-size: 24px;
     font-weight: 400;
     padding-top: 50px;
+    color: var(--bg-black-700);
 }
 
 /* CONTACT ME */
@@ -732,21 +733,11 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
-.main-container {
-    background: var(--bg-black-900);
-    padding: 0 30px;
-    padding-top: 40px;
-}
 
-.section-title h2 {
-    background-color: rebeccapurple;
-}
-
-
-.sub-info {
+/* .sub-info .section-title {
     background: var(--bg-black-900);
     display: block;
-    padding: 0 30px;
+
     opacity: 1;
     padding-bottom: 40px;
 }
@@ -758,6 +749,8 @@ h3.my-profession {
 .sub-info a:hover {
     color: var(--bg-black-700);
 }
+
+ */
 
 @media (max-width:1199px) {
     .sidebar {
@@ -779,7 +772,7 @@ h3.my-profession {
 
 
     .contact .contact-info-item,
-    .portfolio .personal-item,
+    .portfolio .portfolio-item,
     .service .service-item {
         flex: 0 0 50%;
         min-width: 50%;
