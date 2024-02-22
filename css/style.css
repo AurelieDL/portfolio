@@ -58,6 +58,8 @@ p {
     display: block;
     padding: 0 30px;
     opacity: 1;
+
+
 }
 
 
@@ -162,7 +164,6 @@ p {
     position: fixed;
     left: 0;
     top: 0;
-    /* border-right: 1px solid var(--bg-black-700); */
     z-index: 10;
 }
 
@@ -200,6 +201,12 @@ p {
     left: 0;
 }
 
+
+.sidebar .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .sidebar .nav-toggler span::after {
     content: "";
     height: 2px;
@@ -210,6 +217,15 @@ p {
     left: 0;
 }
 
+
+.sidebar .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.sidebar .nav {
+    margin-top: 50px;
+}
 
 .nav__menu {
     position: fixed;
@@ -783,11 +799,26 @@ h3.my-profession {
         left: -300px;
     }
 
+    .sidebar.open {
+        left: 0;
+    }
 
     .main-content {
         padding-left: 0;
     }
 
+    .sidebar .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .sidebar .nav-toggler.open {
+        left: 110px;
+    }
+
+    .section {
+        left: 0;
+    }
 
     .about .about-content .personal-info .info-item p span {
         display: block;
