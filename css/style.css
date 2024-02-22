@@ -165,6 +165,8 @@ p {
     left: 0;
     top: 0;
     z-index: 10;
+    display: flex;
+    transition: all 0.3s ease;
 }
 
 .sidebar .nav-toggler {
@@ -180,6 +182,7 @@ p {
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 
@@ -190,6 +193,21 @@ p {
     display: inline-block;
     position: relative;
 }
+
+.sidebar .nav-toggler.open span {
+    background: transparent;
+}
+
+.sidebar .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.sidebar .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
 
 .sidebar .nav-toggler span::before {
     content: "";
@@ -202,11 +220,6 @@ p {
 }
 
 
-.sidebar .nav-toggler.open span::before {
-    transform: rotate(45deg);
-    top: 0;
-}
-
 .sidebar .nav-toggler span::after {
     content: "";
     height: 2px;
@@ -217,11 +230,6 @@ p {
     left: 0;
 }
 
-
-.sidebar .nav-toggler.open span::after {
-    transform: rotate(-45deg);
-    top: 0;
-}
 
 .sidebar .nav {
     margin-top: 50px;
@@ -851,6 +859,11 @@ h3.my-profession {
 
     }
 
+    .home .home-info h3 {
+
+        text-align: center;
+    }
+
     .home .home-img {
         display: none;
     }
@@ -869,7 +882,7 @@ h3.my-profession {
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
-    .about .about-content .personal-info {
+    .about .about-content .personal-info a.btn {
         flex: 0 0 100%;
         min-width: 100%;
     }

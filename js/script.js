@@ -31,13 +31,23 @@ function navHighlighter() {
 
 
 
-
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     allSection = document.querySelectorAll(".section"),
     totalSection = allSection.length,
     aside = document.querySelector(".sidebar");
 navTogglerBtn.addEventListener("click", () => {
+
+    //check si yza la class open
+    // if so call 
     asideSectionTogglerBtn();
+})
+
+const bodyPage = document.querySelector(".main-content");
+
+bodyPage.addEventListener("click", () => {
+    if (aside.classList.contains("open")) {
+        asideSectionTogglerBtn();
+    }
 })
 
 function asideSectionTogglerBtn() {
@@ -49,29 +59,3 @@ function asideSectionTogglerBtn() {
 }
 
 
-/* =================== Test active section =================== */
-
-// const nav = document.querySelector(".nav"),
-//     navList = nav.nav.querySelectorAll("li"),
-//     totalNavList = navList.length,
-//     allSection = document.querySelectorAll(".section"),
-//     totalSection = allSection.length;
-// for (let i = 0; i < totalNavList; i++) {
-//     const a = navList[i].querySelector("a");
-//     a.addEventListener("click", function () {
-//         for (let j = 0; j < totalNavList; j++) {
-
-//             navList[j].querySelector("a").classList.remove("active");
-//         }
-//         this.classList.add("active")
-//         showSection(this);
-//     })
-// }
-
-// function showSection(element) {
-//     for (let i = 0; i < totalSection; i++) {
-//         allSection[i].classList.remove("active");
-//     }
-//     const target = element.length("href").split("#")[1];
-//     document.querySelector("#" = target).classList.add("active")
-// }
