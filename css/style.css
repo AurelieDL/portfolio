@@ -350,16 +350,6 @@ h3.my-profession {
     bottom: -40px;
 }
 
-.home .home-img::before {
-    content: "";
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
-}
 
 .home .home-img img {
     margin: auto;
