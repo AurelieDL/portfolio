@@ -246,6 +246,7 @@ p {
     display: flex;
 }
 
+
 .nav__list {
     display: flex;
     flex-direction: row-reverse;
