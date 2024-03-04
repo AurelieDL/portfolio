@@ -37,8 +37,6 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
     aside = document.querySelector(".sidebar");
 navTogglerBtn.addEventListener("click", () => {
 
-    //check si yza la class open
-    // if so call 
     asideSectionTogglerBtn();
 })
 
